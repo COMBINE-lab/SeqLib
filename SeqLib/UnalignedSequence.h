@@ -1,6 +1,7 @@
 #ifndef SEQLIB_UNALIGNED_SEQ_H
 #define SEQLIB_UNALIGNED_SEQ_H
 
+/*
 extern "C" {
   #include "bwa/bwa.h"
   #include "bwa/bwt.h"
@@ -12,6 +13,7 @@ extern "C" {
   int is_bwt(ubyte_t *T, int n);
   KSEQ_DECLARE(gzFile)
 }
+*/
 
 
 #include <cstring>

@@ -8,8 +8,8 @@
 #include "SeqLib/FastqReader.h"
 #include "SeqLib/BamReader.h"
 #include "SeqLib/BamWriter.h"
-#include "SeqLib/BWAWrapper.h"
-#include "SeqLib/FermiAssembler.h"
+//#include "SeqLib/BWAWrapper.h"
+//#include "SeqLib/FermiAssembler.h"
 
 void kt_pipeline(int n_threads, void *(*func)(void*, int, void*), void *shared_data, int n_steps);
 
