@@ -1,7 +1,9 @@
 [![Build Status](https://travis-ci.org/walaj/SeqLib.svg?branch=master)](https://travis-ci.org/walaj/SeqLib)
 [![Coverage Status](https://coveralls.io/repos/github/walaj/SeqLib/badge.svg?branch=master)](https://coveralls.io/github/walaj/SeqLib?branch=master)
 
-C++ interface to HTSlib, BWA-MEM and Fermi
+**NOTE:**  This is a fork of [walaj/SeqLib](https://github.com/walaj/SeqLib).  The only purpose of this fork is to use the most up-to-date upstream htslib, and to strip away components un-necessary for our use cases.  That is, we remove support for BWA and fermi, and simply use SeqLib as a lightweight C++11 wrapper around htslib.
+
+C++ interface to HTSlib~~, BWA-MEM and Fermi~~
 
 **License:** [Apache2][license]
 
@@ -33,11 +35,11 @@ Installation
 
 #######
 ```bash
-git clone --recursive https://github.com/walaj/SeqLib.git
+git clone --recursive https://github.com/COMBINE-lab/SeqLib.git
 cd SeqLib
 ## cd htslib && ./configure --enable-libcurl && cd .. # support for remote (FTP/HTTPS/Google etc) BAM access
 ./configure ## or: ./configure LDFLAGS='-lcurl -lcrypto' # for remote support
-make ## for c++11 (req. for AhoCorasick), run as: make CXXFLAGS='-std=c++11'
+make CXXFLAGS='-std=c++11'
 make install
 make seqtools ## for the command line version
 ```
